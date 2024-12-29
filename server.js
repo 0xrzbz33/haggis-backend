@@ -4,7 +4,7 @@ const cors = require("cors");
 const fs = require("fs");
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000; // Port dynamique pour Render
 
 // Middleware
 app.use(bodyParser.json());
@@ -58,5 +58,5 @@ app.post("/api/scores", (req, res) => {
 
 // Démarrer le serveur
 app.listen(PORT, () => {
-    console.log(`Serveur lancé sur http://localhost:${PORT}`);
+    console.log(`Serveur lancé sur le port ${PORT}`);
 });
