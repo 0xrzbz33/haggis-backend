@@ -10,7 +10,8 @@
   "dependencies": {
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "mongoose": "^8.9.2"
   },
   "engines": {
     "node": ">=14.0.0"
@@ -18,4 +19,3 @@
   "author": "Your Name",
   "license": "MIT"
 }
-
